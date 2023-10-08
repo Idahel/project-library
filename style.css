@@ -1,0 +1,76 @@
+
+body {
+    background:#A4D0F7;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    color: #A2092D;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#filterDropDown {
+    margin-left: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+#sortYearButton {
+    margin-left: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+#sortRatingButton {
+    margin-left: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+
+#sortAuthorsButton {
+    margin-left: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    min-width: 200px;
+    flex: 1;
+    border: 5px solid #A2092D;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    height: 300px;
+    width: 200px;
+}
