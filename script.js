@@ -207,6 +207,36 @@ sortRatingButton.addEventListener("click", () => {
   sortRatingButton.textContent = `Rating ${sortDirection === "asc" ? "(Highest to Lowest)" : "(Lowest to Highest)"}`;
 });
 
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const notFoundMessage = document.getElementById("notFoundMessage");
+
+const searchBooks = () => {
+  const searchText = searchInput.value.toLowerCase();
+  const filteredList = books.filter((book) => {
+    return (
+      book.title.toLowerCase().includes(searchText) ||
+      book.author.toLowerCase().includes(searchText) ||
+      book.genre.toLowerCase().includes(searchText)
+    );
+  });
+  if (filteredList.length === 0) {
+    notFoundMessage.style.display = "block";
+  } else {
+    notFoundMessage.style.display = "none";
+  }
+
+  loadBooks(filteredList);
+};
+
+searchButton.addEventListener("click", searchBooks);
+searchInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    searchBooks();
+  }
+});
+
+
 loadBooks (books);
 
 

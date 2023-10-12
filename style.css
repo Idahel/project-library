@@ -13,6 +13,7 @@ h1 {
 
 #filterDropDown {
     margin-left: 20px;
+    margin-top: 20px;
     background-color: #A4D0F7;
     color: #A2092D;
     border: 3px solid #A2092D;
@@ -23,6 +24,7 @@ h1 {
 
 #sortYearButton {
     margin-left: 20px;
+    margin-top: 20px;
     background-color: #A4D0F7;
     color: #A2092D;
     border: 3px solid #A2092D;
@@ -30,9 +32,14 @@ h1 {
     font-size: 15px;
     letter-spacing: 3px;
 }
+#sortYearButton:active {
+    background-color: #A2092D;
+    color:#A4D0F7;
+  }
 
 #sortRatingButton {
     margin-left: 20px;
+    margin-top: 20px;
     background-color: #A4D0F7;
     color: #A2092D;
     border: 3px solid #A2092D;
@@ -40,15 +47,59 @@ h1 {
     font-size: 15px;
     letter-spacing: 3px;
 }
+#sortRatingButton:active {
+    background-color: #A2092D;
+    color:#A4D0F7;
+  }
 
 
 #sortAuthorsButton {
     margin-left: 20px;
+    margin-top: 20px;
     background-color: #A4D0F7;
     color: #A2092D;
     border: 3px solid #A2092D;
     padding: 5px;
     font-size: 15px;
+    letter-spacing: 3px;
+}
+#sortAuthorsButton:active {
+    background-color: #A2092D;
+    color:#A4D0F7;
+  }
+
+#searchInput {
+    width:320px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+#searchButton {
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #A4D0F7;
+    color: #A2092D;
+    border: 3px solid #A2092D;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transition: background-color 0.3s;
+}
+
+#searchButton:active {
+  background-color: #A2092D;
+  color:#A4D0F7;
+}
+
+#notFoundMessage {
+    margin:20px;
+    font-size: medium;
     letter-spacing: 3px;
 }
 
